@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <tItle>ToDo JS</tItle>
+</head>
+
+<body>
+  <h1>ToDo List JS</h1>
+  <form id='header'>
+    <div class="center">
+      <input class="input" 
+       placeholder="What needs to be done today?"
+       id="inputMain" 
+       name="input1" 
+       minlength="1"
+       maxlength="255"
+       size="24"
+      />
+      <div>
+        <button class="add-button" id="buttonAdd">ADD</button>
+      </div>
+    </div>  
+  </form>
+  <div class="pages" id="total-pages"></div>
+  <button class="delete-button" id="deleteAll">Delete completed</button>
+  <div class="block" id="block">
+    <input class="check-box-up" type="checkbox"  id="check-box-up"/>
+    <b class="check-box-text">Accept All</b>
+    <ul id="todo-elements"></ul>
+    <div class="flex-box" id="bottom-buttons">
+      <button id="All" class="flex-element active">All(0)</button>
+      <button id="Active"class="flex-element">Active(0)</button>
+      <button id="Completed"class="flex-element">Completed(0)</button>
+    </div>
+  </div>
+  </div>
+  <script defer src="./todo.js"></script>
+</body>
+</html>
